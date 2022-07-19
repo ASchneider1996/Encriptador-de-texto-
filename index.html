@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <title>Encriptador de Mensajes</title>
+</head>
+<body>
+    <section>
+    <div class="logo">
+        <img src="imagenes/Vector.png" id="img-logo">
+    </div>
+    <div class="text-field">
+      <input type="text" placeholder="Ingrese el texto aqui" id="textarea">
+    </div>
+      <div class="info-message">
+      <img src="imagenes/Vector2.png" id="img-info"> <p>Solo letras minusculas y sin acentos</p>
+    </div>
+    <div id="btn-field">
+      <button onclick="enc()" id="btn-encriptar">Encriptar</button>
+      <button onclick="dec()" id="btn-desencriptar">Desencriptar</button>
+      </div>
+      <aside>
+      <textarea style="display:none;" id="texto-final" cols="30" rows="10"></textarea>
+      <div id="ocultar">
+        <img src="imagenes/Muñeco.png" id="img-lupa">    
+        <h2 id="error">Ningún mensaje fue encontrado</h2>
+        <p id="p">Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+      <div id="btn-field2">
+        <button id="btn-copiar" hidden>Copiar</button>
+      </div>
+      </aside>
+    </section>
+    <footer>
+<p>Creado por Analia Schneider</p>
+    </footer>
+<script src="main.js"></script>
+</body>
+</html>
