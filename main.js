@@ -84,7 +84,7 @@ decryptBtn.addEventListener("click", function(event) {
   let txt = text.value; 
   var message = dec(txt); 
 // Devuelve los espacios entre palabras
-  finalText.value = message.split(" ").join(" ");
+  finalText.value = message.split("").join("");
   console.log(message);  
 }); 
 
